@@ -1,0 +1,12 @@
+/*
+    책 "한번에 이해되는 자바 프로그래밍, 임좌상, 조용주, 2021, 인피니티북스"에서 작성된 코드
+ */
+class RectangleImpl2 extends Rectangle implements IShape {
+    public RectangleImpl2(double width, double height) { 
+        super(width, height);
+    }    
+    @Override
+    public double getArea() { return getWidth() * getHeight(); }
+    @Override
+    public double getPerimeter() { return 2*(getWidth() + getHeight()); }
+}
