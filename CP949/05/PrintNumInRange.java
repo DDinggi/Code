@@ -11,7 +11,7 @@ class PrintNumInRange {
     boolean isInRange(int min, int max) {
         return (value >= min && value <= max) ? true : false;
     }
-    void printInt() { System.out.println(value); }17        
+    void printInt() { System.out.println(value); }        
     void readInt() {
         System.out.print("정수를 입력하세요: ")
         value = scanner.nextInt();
