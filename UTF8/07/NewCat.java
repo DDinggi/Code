@@ -1,6 +1,8 @@
 /*
     책 "한번에 이해되는 자바 프로그래밍, 임좌상, 조용주, 2021, 인피니티북스"에서 작성된 코드
  */
+import java.time.LocalDateTime;
+ 
 class NewCat implements Cloneable {
     String name = null;
     String breed = null;
@@ -14,10 +16,10 @@ class NewCat implements Cloneable {
     @Override
     public boolean equals(Object o) {
         if (o == null) { return false; } // o가 null이면 확인 필요 없음
-        if (!(o instanceof NewCat)) { return false } // 
+        if (!(o instanceof NewCat)) { return false; } // 
         NewCat d = (NewCat) o; // 자식 클래스로 형변환
         System.out.printf(
-              EQUALS: name %s==%s breed %s==%s birth %s==%s %b", 
+              "EQUALS: name %s==%s breed %s==%s birth %s==%s %b", 
               d.name, name, d.breed, breed, 
               d.birthDay.toString(), birthDay.toString(), 
               (d.name == name && d.breed.equals(breed) &&
