@@ -19,11 +19,12 @@ class Order {
         if (v >= MAX_NVISIT) {            
             System.out.printf("%d ordered. So you get free coffee!\n", v);
             customer.resetVisit();
+            quantity--; // ÇÑ ÀÜ ¹«·á
         }
     }
     public int charge() {
         int total = coffee.getPrice() * quantity;
-        System.out.printf("You charge will be %d\n", total);
+        System.out.printf("Your charge will be %d\n", total);
         return total;
     }
 }

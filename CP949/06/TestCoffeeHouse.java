@@ -11,7 +11,7 @@ class TestCoffeeHouse {
         Coffee c = new Coffee("americano", 5000);
         Order o = new Order();
        
-        for (int i = 0; i < 12; i++) { // 11번 주문
+        for (int i = 0; i < 11; i++) { // 11번 주문
             o.takeOrder(v, c);
         }
         ch.addOrder(o);
